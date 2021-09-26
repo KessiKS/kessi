@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Страница регистриции</title>
+	<link rel="stylesheet" href="style.css">
+	<meta charset="utf-8">
+ </head>
+
+	<body>
+	
+	<table border="0" width="100%" cellpadding="5">
+		<tr>
+		<th width="33.3%">
+		<div style="text-align: right;" >
+		<img class="animated-gif" src="https://static.tildacdn.com/tild3530-3632-4239-b437-376338373035/__2.gif" alt="гиф">
+		</div>
+		</th>
+		<th width="33.3%">
+	
+	
+	<form class="CENTER" method="get">
+			<!--div style="text-align: center;"-->
+		<h2> Форма регистрации</h2>
+			<!--/div-->
+
+			<label for="name">Имя*</label>
+			<br>
+			<input type="text" required id="name" name="name" maxlength="10" size="23"/>
+      
+		<br>
+			<label for="surname">Фамилия*</label>
+			<br>
+			<input type="text" required id="surname" name="surname" size="23" maxlength="16"/>
+	
+		<br>
+			<label for="sex">Пол*</label>
+			<br>
+			М<input type="radio" required id="man" name="sex" />
+			Ж<input type="radio" required id="woman" name="sex" />
+
+		<br>
+			<label for="age">Возраст*:</label>
+			<br>
+            <input type="number" required min="18" max="120" value="18" id="age" name="age" "/>
+        
+			
+		<br>
+			<label for="email">Электронная почта*</label>
+			<br>
+            <input type="email" required placeholder="@gmail.com" pattern=".+@gmail.com" size="23" id="email" name="email" />
+		
+            
+		<br>
+            <label for="password">Пароль*</label>
+			<br>
+            <input type="password" required id="password" name="password" size="23"/>
+        
+      
+		<br>
+			<label for="website">Веб-сайт</label>
+			<br>
+			<input type="text" placeholder="https:// "pattern="https://*" size="23" id="website" name="website" />
+		
+  
+		<p>
+		  <label for="self_story">О себе</label>
+		  <br>
+		  <textarea name="message" id="self_story" cols="40" rows="6" minlength="10" maxlength="200"></textarea>
+		</p>
+  
+		<p>
+			<label for="agree_rules">Я согласен c правилами</label>
+			<input type="checkbox" required name="agree_rules" id="agree_rules" size="23">
+		</p>
+      
+        <p>
+            <input type="submit" value="Отправить" />
+        </p>
+		
+		<p>
+			* помечены обязательные для заполнения поля
+		</p>
+
+
+			
+			
+	</form>
+	
+	</th>
+			
+	
+		<th width="33.3%">
+		</th>
+		</tr>
+	</table>
+		
+		
+	</body>
+
+</html>
